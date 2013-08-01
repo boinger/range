@@ -1,0 +1,18 @@
+## Do this to install:
+
+aclocal
+libtoolize --force
+autoheader
+automake -a
+autoconf
+./configure --prefix=/usr
+make
+sudo make install
+
+cd perl
+sh ./build
+perl Makefile.PL
+make
+sudo make install
+## kill perllocal.pod
+sudo find / -name perllocal.pod -type f -exec rm -f {} \;
