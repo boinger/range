@@ -8,7 +8,7 @@ LIBS = unix
 
 PATH = /usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/usr/sbin:/sbin
 
-LDPATH=-L /usr/lib/ocaml/site-lib/pcre/ -L /usr/local/lib -L /usr/lib
+LDPATH=-L /usr/lib64/ocaml/site-lib/pcre/ -L /usr/local/lib -L /usr/lib64
 
 OCAML_PCRE=$(shell ocamlfind query pcre)
 OCAML_STDLIB=$(shell ocamlfind query unix)
@@ -30,7 +30,7 @@ install:
 	install -m 755 librange.so $(DESTDIR)/usr/lib/
 
 camlcode.o: ncl
-	ocamlopt -fPIC -I $(OCAML_PCRE) -output-obj -o camlcode.o unix.cmxa pcre/pcre.cmxa range_utils.cmx parser.cmx lexer.cmx memoize.cmx tinydns.cmx netmask.cmx admins.cmx netblocks.cmx hosts_netblocks.cmx evaluate.cmx range.cmx
+	ocamlopt -fPIC -I $(OCAML_PCRE) -output-obj -o camlcode.o unix.cmxa pcre.cmxa range_utils.cmx parser.cmx lexer.cmx memoize.cmx tinydns.cmx netmask.cmx admins.cmx netblocks.cmx hosts_netblocks.cmx evaluate.cmx range.cmx
 
 librange.o: librange.c
 	gcc -fPIC -Wall -g -c librange.c -I $(OCAML_STDLIB)
