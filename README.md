@@ -4,7 +4,6 @@
 \#does something
 
 ###[libcrange](libcrange)###
-
   Main range bits
 
   Pretty important stuff.  Start here.
@@ -17,7 +16,6 @@
   Needs OCaml.
 
 ###[mod_ranged](mod_ranged)###
-
   Apache module
 
 ###[mod_yahoo_range](mod_yahoo_range)###
