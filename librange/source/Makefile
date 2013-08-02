@@ -36,6 +36,7 @@ librange.o: librange.c
 	gcc -fPIC -Wall -g -c librange.c -I $(OCAML_STDLIB)
 
 cleaner: clean
+	rm -f ast.cmi
 	rm -f librange.so librange.o testrange camlcode.o pcre_stubs.o
 	rm -rf a b 
 	rm -f memoize.o memoize.cmx 
