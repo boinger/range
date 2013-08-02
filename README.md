@@ -12,7 +12,9 @@
   source/doit.sh
 
 ###[librange](librange)###
-\#does something
+  /usr/include/range.h & /usr/lib/librange.so
+
+  Needs OCaml.
 
 ###[mod_ranged](mod_ranged)###
 
@@ -40,14 +42,14 @@
   Install librange first.
 
 ###[python_seco_range](python_seco_range)###
+  Py module for talking to range server
 
 ###[range_utils](range_utils)###
-
   /usr/local/bin/rangeTest.pl
   Install perl_seco_libcrange first.
 
 ###[ruby_seco_librange](ruby_seco_librange)###
-  PHP module for interacting with range data
+  Ruby module for interacting with range data
   Install librange first.
 
 ###[seco_awesomerange](seco_awesomerange)###
