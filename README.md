@@ -35,9 +35,6 @@
   /usr/local/bin/rangeTest.pl
   Install perl_seco_libcrange first.
 
-###[Seco_Range](Seco_Range)###
-\#does something
-
 ###[seco_awesomerange](seco_awesomerange)###
 
 ###[seco_ed](seco_ed)###
