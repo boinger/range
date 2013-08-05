@@ -1,25 +1,14 @@
 #range#
 
-###[Seco_Range](Seco_Range)###
-\#does something
-
 ###[libcrange](libcrange)###
   Main range bits
 
   Pretty important stuff.  Start here.
 
-  source/doit.sh
-
-###[librange](librange)###
-  /usr/include/range.h & /usr/lib/librange.so
-
-  Needs OCaml.
+  export DESTDIR=/where/to/install && source/doit.sh
 
 ###[mod_ranged](mod_ranged)###
   Apache module
-
-###[mod_yahoo_range](mod_yahoo_range)###
-  yApache module
 
 ###[perl_seco_data_range](perl_seco_data_range)###
 
@@ -46,9 +35,24 @@
   /usr/local/bin/rangeTest.pl
   Install perl_seco_libcrange first.
 
+###[mod_yahoo_range](mod_yahoo_range)###
+  yApache module
+
+  Mostly the same as [mod_ranged](mod_ranged), except it includes LWES support
+
 ###[ruby_seco_librange](ruby_seco_librange)###
+  **DEPRECATED**
   Ruby module for interacting with range data
   Install librange first.
+
+###[librange](librange)###
+  **DEPRECATED**
+  /usr/include/range.h & /usr/lib/librange.so
+
+  Needs OCaml.
+
+###[Seco_Range](Seco_Range)###
+\#does something
 
 ###[seco_awesomerange](seco_awesomerange)###
 
