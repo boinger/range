@@ -35,22 +35,6 @@
   /usr/local/bin/rangeTest.pl
   Install perl_seco_libcrange first.
 
-###[mod_yahoo_range](mod_yahoo_range)###
-  yApache module
-
-  Mostly the same as [mod_ranged](mod_ranged), except it includes LWES support
-
-###[ruby_seco_librange](ruby_seco_librange)###
-  **DEPRECATED**
-  Ruby module for interacting with range data
-  Install librange first.
-
-###[librange](librange)###
-  **DEPRECATED**
-  /usr/include/range.h & /usr/lib/librange.so
-
-  Needs OCaml.
-
 ###[Seco_Range](Seco_Range)###
 \#does something
 
