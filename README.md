@@ -11,7 +11,6 @@
   Apache module
 
 ###[perl_seco_data_range](perl_seco_data_range)###
-
   Perl-based range utils.
 
 ###[perl_seco_data_writer](perl_seco_data_writer)###
