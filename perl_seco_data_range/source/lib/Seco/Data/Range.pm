@@ -23,7 +23,7 @@ my $node_regex = qr/
 sub new {
     my $class            = shift;
     my __PACKAGE__ $self = fields::new($class);
-    my $default_server   = 'range.ysm';
+    my $default_server   = 'range';
     if (@_ == 1) {
         $default_server = shift;
     }
@@ -37,7 +37,7 @@ sub new {
         'list'      => undef,
         @_
     );
-    
+
     $self->{list}      = $args{list};
     $self->{server}    = $args{server};
     $self->{port}      = $args{port};
@@ -264,11 +264,11 @@ sub _simple_expand {
                    $node_regex
                    \.\.            # our separator is '..'
                    \1?          # the prefix again, which is optional
-		  (\d+)         # and the end of the range
-		  ((?(3) \3 |   # if the domain matched before, we want it here
-		  (?:\.[-A-Za-z\d.]+)?)) # if it didn't then we can have a new
-			        # one here, like foo1-3.search
-		  \z/xs
+      (\d+)         # and the end of the range
+      ((?(3) \3 |   # if the domain matched before, we want it here
+      (?:\.[-A-Za-z\d.]+)?)) # if it didn't then we can have a new
+              # one here, like foo1-3.search
+      \z/xs
           )
         {
             my ($prefix, $start, $suf1, $end, $suf2) = ($1, $2, $3, $4, $5);
@@ -345,10 +345,10 @@ Seco::Data::Range - OO interface to ranged
   use Seco::Data::Range;
 
   my $range = Seco::Data::Range->new;
-  or 
+  or
   my $range = Seco::Data::Range->new(list => '1' );
 
-  This will use "list" instead of "expand" and works as expected for any 
+  This will use "list" instead of "expand" and works as expected for any
   range expressions using q(). Only use when needed.
 
   my @nodes = $range->expand("vlan(pain)");
